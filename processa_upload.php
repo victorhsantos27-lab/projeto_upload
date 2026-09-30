@@ -2,7 +2,7 @@
 $pastaDestino = "upload/";
 
 if (isset($_FILES["arquivo"]) && $_FILES["arquivo"]["error"] == 0) {
-    $nomeArquivo = basename($_FILES["arquivo"]["nome"]);
+    $nomeArquivo = basename($_FILES["arquivo"]["name"]);
     $caminhoDestino = $pastaDestino . $nomeArquivo;
 
     //Verifica se é uma imagem

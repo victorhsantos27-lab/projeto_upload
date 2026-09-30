@@ -19,7 +19,7 @@
             foreach ($arquivos as $arquivo) {
                 if($arquivo != "." && $arquivo != "..") {
                     echo "<div>
-                             <img src='{$pasta} {$arquivo}' width='150' style='border:1px solid #ccc;'>
+                             <img src='$pasta$arquivo' width='150' style='border:1px solid #ccc;'>
                             </div>";
                 }
             }
